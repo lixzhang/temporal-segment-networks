@@ -11,7 +11,7 @@ def parse_directory(path, rgb_prefix='img_', flow_x_prefix='flow_x_', flow_y_pre
     Parse directories holding extracted frames from standard benchmarks
     """
     print('parse frames under folder {}'.format(path))
-    frame_folders = glob.glob(os.path.join(path, '*'))
+    frame_folders = glob.glob(os.path.join(path, '*', '*'))
 
     def count_files(directory, prefix_list):
         lst = os.listdir(directory)

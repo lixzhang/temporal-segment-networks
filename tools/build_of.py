@@ -117,7 +117,7 @@ if __name__ == '__main__':
         os.makedirs(out_path)
     print("reading videos from folder: ", src_path)
     print("selected extension of videos:", ext)
-    vid_list = glob.glob(src_path+'/*.'+ext)
+    vid_list = glob.glob(src_path+'/*/*.'+ext)
     print("total number of videos found: ", len(vid_list))
     if(resume == 'yes'):
         com_vid_list = os.listdir(out_path)
